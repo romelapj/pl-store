@@ -1,0 +1,5 @@
+<app-header></app-header>
+<p>products works!</p>
+<section *ngFor="let wear of products ">
+    <app-product (productClicked)="clickProduct($event)"  [product]="wear"></app-product>
+</section>
